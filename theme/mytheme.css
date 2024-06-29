@@ -1,0 +1,162 @@
+/* @theme mytheme */
+
+@import 'default';
+
+/* 1枚目のスライドの背景画像を設定 */
+section {
+  background-image: url('./img/background/slide.png');
+  background-size: cover;
+  background-position: center;
+  color: #0e0d6a;
+  padding: 2rem;
+  font-family: 'Meiryo', sans-serif; /* 全体のフォントファミリーをメイリオに設定 */
+}
+
+/* 1枚目のスライドの背景画像を設定 */
+section.top {
+  background-image: url('./img/background/top.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* 垂直方向に中央寄せ */
+  justify-content: center; /* 水平方向に中央寄せ */
+}
+
+section.top > * {
+  width: 80%; /* 必要に応じて調整 */
+  text-align: left; /* コンテンツ内のテキストを左寄せ */
+  margin-left: 20%; /* 必要に応じて調整 */
+}
+
+section.crosshead {
+  background-image: url('./img/background/crosshead.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* 垂直方向に中央寄せ */
+  justify-content: center; /* 水平方向に中央寄せ */
+}
+
+/* 引用のスタイルを設定 */
+blockquote {
+  color: #333; /* 文字色 */
+  border-left: 4px solid #ccc; /* 左側のボーダー */
+  padding: 10px; /* 内側の余白 */
+  background-color: #f9f9f9; /* 背景色 */
+  font-style: italic; /* 斜体 */
+  margin: 1em 0; /* 上下の余白 */
+  font-size: 36pt !important; /* フォントサイズを大きく設定 */
+}
+
+/* 最後のスライドのスタイル */
+section.end {
+  /* 最後のスライドに適用するスタイルをここに追加 */
+  background-image: url('./img/background/end.png');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  color: #ccc;
+  font-size: 0.5em;
+  font-weight: 600;
+  top: 0.3rem;
+}
+
+footer {
+  color: #ccc;
+  font-size: 0.5em;
+  font-weight: 500;
+  bottom: -0.5%;
+}
+negative {
+  color: #595959;
+}
+/* 見出しと本文のフォントサイズを設定 */
+h1 {
+  color: #0e0d6a;
+  font-size: 36pt;
+}
+section.crosshead h1 {
+  color: #ffffff; /* crosshead 内の h1 の文字色を白に設定 */
+}
+
+h2 {
+  color: #0e0d6a;
+  font-size: 20pt;
+}
+section.crosshead h2 {
+  color: #ffffff; /* crosshead 内の h1 の文字色を白に設定 */
+}
+h3 {
+  color: #0e0d6a;
+  font-size: 20pt;
+}
+
+p {
+  color: #0e0d6a;
+  font-size: 20pt;
+}
+
+/* 吹き出しのスタイル */
+.balloon-left {
+  position: relative;
+  display: inline-block;
+  margin-left: 64px;
+  padding: 32px 64px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  background: #e0edff;
+  border-radius: 20px; /* 角を丸くする */
+  text-align: center;
+}
+
+.balloon-left:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 50px solid #e0edff;
+}
+
+.balloon-left p {
+  margin: 0;
+  padding: 0;
+}
+.balloon-right {
+  position: relative;
+  display: inline-block;
+  margin-right: 64px;
+  padding: 32px 64px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  border-radius: 20px; /* 角を丸くする */
+  background: #e0edff;
+}
+
+.balloon-right:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 50px solid #e0edff;
+}
+
+.balloon-right p {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  width: 100px; /* アイコンの幅を設定 */
+  height: 100px; /* アイコンの高さを設定 */
+  border-radius: 50%; /* 丸角にする */
+  object-fit: cover; /* 画像をアイコンのサイズに合わせてトリミング */
+  vertical-align: middle; /* アイコンの位置を中央に調整 */
+}
